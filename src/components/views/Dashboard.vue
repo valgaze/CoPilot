@@ -7,10 +7,10 @@
         <alert :dismissible="true"
                type="success"
                :iconClasses="['fa', 'fa-check']"
-               title="CoPilot is open source!">
-          <span>Click on icon to check it out on github.</span>
+               title="Jonah bongo 123!">
+          <span>Bingo bongo.</span>
           <a href="https://github.com/misterGF/CoPilot" target="_blank">
-            <i class="fa fa-github fa-2x"></i>
+            <i class="fa fa-reply fa-2x"></i>
           </a>
         </alert>
       </div>
@@ -26,7 +26,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <info-box color-class="bg-red"
                   :icon-classes="['fa', 'fa-google-plus']"
-                  text="Likes"
+                  text="Shipments"
                   number="41,410"></info-box>
       </div>
       <!-- /.col -->
@@ -44,7 +44,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <info-box color-class="bg-yellow"
                   :icon-classes="['ion', 'ion-ios-people-outline']"
-                  text="New Members"
+                  text="New Customers"
                   number="2,000"></info-box>
       </div>
       <!-- /.col -->
@@ -92,7 +92,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-green"
                           :icon-classes="['ion', 'ion-ios-heart-outline']"
-                          text="Mentions"
+                          text="Activity"
                           number="92,050"
                           :progress="20"
                           description="20% increase in 30 days"></process-info-box>
@@ -101,7 +101,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-red"
                           :icon-classes="['ion', 'ion-ios-cloud-download-outline']"
-                          text="Downloads"
+                          text="Transactions"
                           number="114,381"
                           :progress="70"
                           description="70% increase since yesterday"></process-info-box>
@@ -110,7 +110,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-aqua"
                           :icon-classes="['ion', 'ion-ios-chatbubble-outline']"
-                          text="Direct Messages"
+                          text="Support"
                           number="163,921"
                           :progress="40"
                           description="40% increase compared to last year"></process-info-box>

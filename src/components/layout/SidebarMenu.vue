@@ -7,20 +7,17 @@
         <span class="page">Dashboard</span>
       </a>
     </router-link>
-    <router-link tag="li" class="pageLink" to="/tables">
+
+
+    <router-link tag="li" class="pageLink" to="/action1">
       <a>
         <i class="fa fa-table"></i>
-        <span class="page">Tables</span>
+        <span class="page">Begin</span>
       </a>
     </router-link>
 
+
     <li class="header">ME</li>
-    <router-link tag="li" class="pageLink" to="/tasks">
-      <a>
-        <i class="fa fa-tasks"></i>
-        <span class="page">Tasks</span>
-      </a>
-    </router-link>
     <router-link tag="li" class="pageLink" to="/setting">
       <a>
         <i class="fa fa-cog"></i>
@@ -37,57 +34,48 @@
       </a>
       <ul class="treeview-menu">
         <li>
+
+          <router-link tag="li" class="pageLink" to="/action1">
           <a href="#">
-            <i class="fa fa-file-word-o"></i> Item 1
+            <i class="fa fa-file-word-o"></i> Action 1
           </a>
+          </router-link>
         </li>
         <li>
+        <router-link tag="li" class="pageLink" to="/action2"> 
           <a href="#">
-            <i class="fa fa-file-picture-o"></i> Item 2
+            <i class="fa fa-file-picture-o"></i> Action 2
           </a>
+        </router-link>
         </li>
         <li>
+          <router-link tag="li" class="pageLink" to="/action3">
           <a href="#">
-            <i class="fa fa-file-pdf-o"></i> Item 3
+            <i class="fa fa-file-pdf-o"></i> Action 3
           </a>
+          </router-link>
         </li>
+        
+        <li>
+          <router-link tag="li" class="pageLink" to="/action4">
+          <a href="#">
+            <i class="fa fa-file-pdf-o"></i> Action 4
+        </a>
+        </router-link>
+          </li>
+          <li>
+          <router-link tag="li" class="pageLink" to="/tasks">
+              <a>
+                <i class="fa fa-tasks"></i>
+                <span class="page">Tasks</span>
+              </a>
+            </router-link>
+          </li>
+
+
       </ul>
     </li>
 
-    <li class="header">LOGS</li>
-    <router-link tag="li" class="pageLink" to="/access">
-      <a>
-        <i class="fa fa-book"></i>
-        <span class="page">Access</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/server">
-      <a>
-        <i class="fa fa-hdd-o"></i>
-        <span class="page">Server</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/repos">
-      <a>
-        <i class="fa fa-heart"></i>
-        <span class="page">Repos</span>
-        <small class="label pull-right bg-green">AJAX</small>
-      </a>
-    </router-link>
-
-    <li class="header">PAGES</li>
-    <router-link tag="li" class="pageLink" to="/login">
-      <a>
-        <i class="fa fa-circle-o text-yellow"></i>
-        <span class="page"> Login</span>
-      </a>
-    </router-link>
-    <router-link tag="li" class="pageLink" to="/404">
-      <a>
-        <i class="fa fa-circle-o text-red"></i>
-        <span class="page"> 404</span>
-      </a>
-    </router-link>
   </ul>
 </template>
 <script>

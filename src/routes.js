@@ -10,6 +10,14 @@ import SettingView from './components/views/Setting.vue'
 import AccessView from './components/views/Access.vue'
 import ServerView from './components/views/Server.vue'
 import ReposView from './components/views/Repos.vue'
+import KitchenSink from './components/views/KitchenSink.vue';
+
+
+import Form1 from './components/views/Form1.vue';
+import Form2 from './components/views/Form2.vue';
+import Form3 from './components/views/Form3.vue';
+import Form4 from './components/views/Form4.vue';
+
 
 // Routes
 const routes = [
@@ -26,6 +34,46 @@ const routes = [
         alias: '',
         component: DashboardView,
         name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+      {
+        path: 'action1',
+        alias: '',
+        component: Form1,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+      {
+        path: 'action2',
+        alias: '',
+        component: Form2,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+      {
+        path: 'action3',
+        alias: '',
+        component: Form3,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+      {
+        path: 'action4',
+        alias: '',
+        component: Form4,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+
+
+
+
+
+      {
+        path: 'kitchensink',
+        alias: '',
+        component: KitchenSink,
+        name: 'KitchenSink',
         meta: {description: 'Overview of environment'}
       }, {
         path: 'tables',

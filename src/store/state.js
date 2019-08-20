@@ -1,4 +1,11 @@
 export default {
+  testData: '',
+
+  multipleValues:[],
+  radioButton: null,
+  selection: null,
+  textareaModel: null,
+
   callingAPI: false,
   searching: '',
   serverURI: 'http://10.110.1.136:8080',

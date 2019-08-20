@@ -10,5 +10,12 @@ export default {
   },
   SET_TOKEN (state, token) {
     state.token = token
-  }
+  },
+
+  setMultiple(state, payload) {
+    for (let key in payload) {
+      state[key] = payload[key];
+    }
+  },
+
 }

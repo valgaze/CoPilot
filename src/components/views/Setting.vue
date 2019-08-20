@@ -12,12 +12,6 @@
 
             <div class="box-body">
               <!-- calendar group -->
-              <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-fw fa-calendar"></i>
-                </span>
-                <datepicker :readonly="true" format="MMM/D/YYYY" id="dateInput" width="100%"></datepicker>
-              </div>
               <br />
               <br />
 

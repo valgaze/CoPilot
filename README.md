@@ -1,7 +1,7 @@
-**CoPilot** is a fully responsive admin template that is forked from [AdminLTE](https://almsaeedstudio.com). The difference here is that this repo is tailored to use with [Vue.js](https://vuejs.org). The UI is based on the [Bootstrap 3](https://github.com/twbs/bootstrap) framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops.
+Starter repo for supply chain
+
 
 <a href="https://copilot.misterGF.io" target="_blank">✈️️ Take it for a spin.</a>
-
 
 [![Build Status](https://travis-ci.org/misterGF/CoPilot.svg?branch=master)](https://travis-ci.org/misterGF/CoPilot)
 [![Build status](https://ci.appveyor.com/api/projects/status/wenct56narbt6r1l?svg=true)](https://ci.appveyor.com/project/misterGF/copilot)
