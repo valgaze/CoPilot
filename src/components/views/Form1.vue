@@ -27,6 +27,19 @@
        Selected value: {{selection}}
       </div>
 
+
+      <h4>Checkbox Options</h4>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Default checkbox
+          </label>
+        </div>
+      </div>
+
+
+
       <h4>Text area</h4>
       <div class="form-group">
         <textarea v-model="textareaModel" placeholder="Text, text, text" class="form-control"></textarea>

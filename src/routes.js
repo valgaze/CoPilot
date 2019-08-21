@@ -18,12 +18,27 @@ import Form2 from './components/views/Form2.vue';
 import Form3 from './components/views/Form3.vue';
 import Form4 from './components/views/Form4.vue';
 
+import Start from './components/views/Start.vue';
+import Start2 from './components/views/Start2.vue';
+import Start3 from './components/views/Start3.vue';
 
 // Routes
 const routes = [
   {
     path: '/login',
     component: LoginView
+  },
+  {
+    path:'/start',
+    component: Start
+  },
+  {
+    path:'/start2',
+    component: Start2
+  },
+  {
+    path:'/start3',
+    component: Start3
   },
   {
     path: '/',

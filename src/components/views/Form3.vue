@@ -57,11 +57,7 @@
         this.$router.push('/action4');
       },
     },
-    mounted() {
-      setTimeout(() => {
-        this.showModal = true;
-      }, 3000);
-    },
+    mounted() { },
     name: 'Tasks',
     data() {
       return {

@@ -1,6 +1,10 @@
 <template>
   <div id="app">
+
+    <transition name="fade" mode="out-in">
     <router-view></router-view>
+    </transition>
+
   </div>
 </template>
 
@@ -27,3 +31,10 @@
     }
   }
 </script>
+
+<style>
+.view > div  {
+  transition: height 0.2s;
+}
+
+</style>

@@ -41,7 +41,7 @@
               :iconClasses="[]"
                type="danger"               >
           <span></span>
-            <i class="fa fa-mail fa-2x"></i>{{$store.state.selection}}
+            <i class="fa fa-mail fa-2x"></i>{{$store.state.textareaModel}}
         </alert>
       </div>
 
