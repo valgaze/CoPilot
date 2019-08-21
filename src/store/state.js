@@ -1,5 +1,7 @@
 export default {
   testData: '',
+  purchaseChoice: 'Ship now - Economy',
+
 
   multipleValues:[],
   radioButton: null,

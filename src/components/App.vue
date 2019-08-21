@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-
-    <transition name="fade" mode="out-in">
-    <router-view></router-view>
-    </transition>
+      <transition name="slidefun" mode="out-in">
+        <router-view v-bind:key="$route.params.id"></router-view>
+      </transition>
 
   </div>
 </template>
@@ -33,8 +32,16 @@
 </script>
 
 <style>
-.view > div  {
-  transition: height 0.2s;
+
+.slidefun-enter-active,
+.slidefun-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
 
+.slidefun-enter,
+.slidefun-leave-active {
+  opacity: 0
+}
 </style>
