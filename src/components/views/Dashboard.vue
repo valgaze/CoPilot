@@ -4,50 +4,12 @@
     <!-- GitHub hint -->
     <div class="row">
       <div class="col-xs-12">
-        <alert :dismissible="true"
-               type="danger"
-               :iconClasses="['fa', 'fa-id-badge']"
-               title="Hello Tom the Oil Rig Manager! Two motors on your drill are broken!  You have only one spare left!">
-        <router-link to="/start">
-          <span>  Click here to triage this Supply Chain issue</span>
-            <i class="fa fa-check fa-2x"></i>
-          </router-link>
-        </alert>
+
       </div>
       
 
       <!-- Info boxes -->
-      <div class="col-md-6 col-sm-4 col-xs-8">
-        <info-box color-class="bg-aqua"
-                  :icon-classes="['ion', 'ion-ios-gear-outline']"
-                  text="% of machine availability"
-                  number="95%"></info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-6 col-sm-4 col-xs-8">
-        <info-box color-class="bg-red"
-                  :icon-classes="['fa', 'fa-wrench']"
-                  text="tools up for maintenance"
-                  number="6 drives required"></info-box>
-      </div>
-      <!-- /.col -->
 
-      <!-- fix for small devices only -->
-      <div class="clearfix visible-sm-block"></div>
-      
-      <div class="col-md-6 col-sm-4 col-xs-8">
-        <info-box color-class="bg-green"
-                  :icon-classes="['ion', 'ion-ios-cart-outline']"
-                  text="In shipment"
-                  number="3 drives in shipment"></info-box>
-      </div>
-      <!-- /.col -->
-      <div class="col-md-6 col-sm-4 col-xs-8">
-        <info-box color-class="bg-yellow"
-                  :icon-classes="['ion', 'ion-ios-people-outline']"
-                  text="Field Workers On-Shift"
-                  number="27"></info-box>
-      </div>
       <!-- /.col -->
     </div>
     <!-- /.row -->
@@ -65,15 +27,40 @@
             </div>
             <hr class="visible-xs-block">
             <div class="col-sm-6 col-xs-12">
-              <p class="text-center">
-                <strong>Machine Failures</strong>
-              </p>
-              <canvas id="languagePie"></canvas>
+
+        <alert :dismissible="true"
+               type="warning"
+               :iconClasses="['fa', 'fa-id-badge']"
+               title="Supply issue with X572 Unit">
+        <router-link to="/route1">
+          <span>  Click here to triage this Supply Chain issue</span>
+            <i class="fa fa-check fa-2x"></i>
+          </router-link>
+        </alert>
+
+        <alert :dismissible="true"
+               type="danger"
+               :iconClasses="['fa', 'fa-id-badge']"
+               title="Catastrophic deliverability issue  in Persian Gulf !">
+        <router-link to="/route1">
+          <span>  Click here to triage this Supply Chain issue</span>
+            <i class="fa fa-check fa-2x"></i>
+          </router-link>
+        </alert>
+
+
+              <alert :dismissible="true"
+               type="danger"
+               :iconClasses="['fa', 'fa-id-badge']"
+               title="Two motors broken, have only one spare left!">
+        <router-link to="/route1">
+          <span>  Click here to triage this Supply Chain issue</span>
+            <i class="fa fa-check fa-2x"></i>
+          </router-link>
+        </alert>
+
             </div>
           </div>
-        </div>
-        <div class="text-center">
-          <small><b></b> </small>
         </div>
       </div>
     </div>
@@ -93,7 +80,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-green"
                           :icon-classes="['ion', 'ion-ios-heart-outline']"
-                          text="Mentions"
+                          text="Escalations"
                           number="92,050"
                           :progress="20"
                           description="20% increase in 30 days"></process-info-box>
@@ -199,28 +186,28 @@ export default {
 
       new Chart(ctx, config) // eslint-disable-line no-new
 
-      var pieChartCanvas = document.getElementById('languagePie').getContext('2d')
-      var pieConfig = {
-        type: 'pie',
-        data: {
-          labels: ['HTML', 'JavaScript', 'CSS'],
-          datasets: [{
-            data: [56.6, 37.7, 4.1],
-            backgroundColor: ['#00a65a', '#f39c12', '#00c0ef'],
-            hoverBackgroundColor: ['#00a65a', '#f39c12', '#00c0ef']
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: !this.isMobile,
-          legend: {
-            position: 'bottom',
-            display: true
-          }
-        }
-      }
+      // var pieChartCanvas = document.getElementById('languagePie').getContext('2d')
+      // var pieConfig = {
+      //   type: 'pie',
+      //   data: {
+      //     labels: ['HTML', 'JavaScript', 'CSS'],
+      //     datasets: [{
+      //       data: [56.6, 37.7, 4.1],
+      //       backgroundColor: ['#00a65a', '#f39c12', '#00c0ef'],
+      //       hoverBackgroundColor: ['#00a65a', '#f39c12', '#00c0ef']
+      //     }]
+      //   },
+      //   options: {
+      //     responsive: true,
+      //     maintainAspectRatio: !this.isMobile,
+      //     legend: {
+      //       position: 'bottom',
+      //       display: true
+      //     }
+      //   }
+      // }
 
-      new Chart(pieChartCanvas, pieConfig) // eslint-disable-line no-new
+      // new Chart(pieChartCanvas, pieConfig) // eslint-disable-line no-new
     })
   }
 }

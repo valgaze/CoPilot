@@ -22,6 +22,9 @@ import Start from './components/views/Start.vue';
 import Start2 from './components/views/Start2.vue';
 import Start3 from './components/views/Start3.vue';
 
+import newStart2 from './components/views/newStart2.vue';
+import newStart3 from './components/views/newStart3.vue';
+
 // Routes
 const routes = [
   {
@@ -29,7 +32,7 @@ const routes = [
     component: LoginView
   },
   {
-    path:'/start',
+    path:'/oldstart',
     component: Start
   },
   {
@@ -51,6 +54,23 @@ const routes = [
         name: 'Dashboard',
         meta: {description: 'Overview of environment'}
       },
+
+      {
+        path: '/route1',
+        alias: '',
+        component: newStart2,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+
+      {
+        path: '/route2',
+        alias: '',
+        component: newStart3,
+        name: 'Dashboard',
+        meta: {description: 'Overview of environment'}
+      },
+
       {
         path: 'action1',
         alias: '',
