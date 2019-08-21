@@ -8,9 +8,8 @@
                type="danger"
                :iconClasses="['fa', 'fa-id-badge']"
                title="Hello Tom the Oil Rig Manager! Two motors on your drill are broken!  You have only one spare left!">
-          <span>  Click here for more info on Rokwell Supply Chain</span>
-          <router-link to="/tables" 
-            target="_blank">
+        <router-link to="/start">
+          <span>  Click here to triage this Supply Chain issue</span>
             <i class="fa fa-check fa-2x"></i>
           </router-link>
         </alert>

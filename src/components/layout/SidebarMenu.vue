@@ -9,10 +9,10 @@
     </router-link>
 
 
-    <router-link tag="li" class="pageLink" to="/action1">
+    <router-link tag="li" class="pageLink" to="/start">
       <a>
         <i class="fa fa-table"></i>
-        <span class="page">Begin</span>
+        <span class="page">Open SAP</span>
       </a>
     </router-link>
 

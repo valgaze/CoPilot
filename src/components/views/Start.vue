@@ -1,5 +1,5 @@
 <template>
-<div class="test-wrapper" @click="setVar">
+<div class="test-wrapper" @click="proceed">
    <div v-if="showModal">
       <transition name="modal">
          <div class="modal-mask">
