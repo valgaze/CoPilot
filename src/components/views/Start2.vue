@@ -75,28 +75,28 @@
 
 <div class="card card-item" >
   <div class="card-header">
-              Buy from nearby suppliers
+    Ship Now -- Expedite
   </div>
   <div class="card-body">
     <h5 class="card-title">You can ship this component from your preferred supplier in <u>7</u> days.</h5>
     <p class="card-text">
       <div class="cheater-row">
-        <div>Additional Cost:</div><div>$71</div>
+        <div>Additional Cost:</div><div>$200</div>
       </div>
-      <ul><li>The cost of shipping from this supplier is $15.  The cost of purchasing this item is $55.</li></ul>
+      <ul><li>The cost of shipping from this supplier is $15.  The cost of purchasing this item is $200.</li></ul>
       
       <div class="cheater-row">
         <div>Benefit:</div><div>Medium</div>
       </div>
       <ul>
-        <li>This component is highly likely to arrive on time.  Some mitigated risk in shipping complexity.</li>
+        <li>Some mitigated risk</li>
       </ul>
 
       <div class="cheater-row">
         <div>Risk:</div><div>Low</div>
       </div>
       <ul>
-        <li>This is a medium-tier component with a 2% higher risk of failure</li>
+        <li>The component required is part of a high-redundancy system. The liklihood of failure for the next 14 days is 2%</li>
       </ul>
 
 

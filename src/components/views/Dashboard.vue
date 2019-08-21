@@ -5,47 +5,49 @@
     <div class="row">
       <div class="col-xs-12">
         <alert :dismissible="true"
-               type="success"
-               :iconClasses="['fa', 'fa-check']"
-               title="Jonah bongo 123!">
-          <span>Bingo bongo.</span>
-          <a href="https://github.com/misterGF/CoPilot" target="_blank">
-            <i class="fa fa-reply fa-2x"></i>
-          </a>
+               type="danger"
+               :iconClasses="['fa', 'fa-id-badge']"
+               title="Hello Tom the Oil Rig Manager! Two motors on your drill are broken!  You have only one spare left!">
+          <span>  Click here for more info on Rokwell Supply Chain</span>
+          <router-link to="/tables" 
+            target="_blank">
+            <i class="fa fa-check fa-2x"></i>
+          </router-link>
         </alert>
       </div>
+      
 
       <!-- Info boxes -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-4 col-xs-8">
         <info-box color-class="bg-aqua"
                   :icon-classes="['ion', 'ion-ios-gear-outline']"
-                  text="CPU Traffic"
-                  number="90%"></info-box>
+                  text="% of machine availability"
+                  number="95%"></info-box>
       </div>
       <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-4 col-xs-8">
         <info-box color-class="bg-red"
-                  :icon-classes="['fa', 'fa-google-plus']"
-                  text="Shipments"
-                  number="41,410"></info-box>
+                  :icon-classes="['fa', 'fa-wrench']"
+                  text="tools up for maintenance"
+                  number="6 drives required"></info-box>
       </div>
       <!-- /.col -->
 
       <!-- fix for small devices only -->
       <div class="clearfix visible-sm-block"></div>
       
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-4 col-xs-8">
         <info-box color-class="bg-green"
                   :icon-classes="['ion', 'ion-ios-cart-outline']"
-                  text="Sales"
-                  number="760"></info-box>
+                  text="In shipment"
+                  number="3 drives in shipment"></info-box>
       </div>
       <!-- /.col -->
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-4 col-xs-8">
         <info-box color-class="bg-yellow"
                   :icon-classes="['ion', 'ion-ios-people-outline']"
-                  text="New Customers"
-                  number="2,000"></info-box>
+                  text="Field Workers On-Shift"
+                  number="27"></info-box>
       </div>
       <!-- /.col -->
     </div>
@@ -58,21 +60,21 @@
           <div class="box-body">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>Web Traffic Overview</strong>
+                <strong>Global Shipments of DC/AC Drives Made</strong>
               </p>
               <canvas id="trafficBar" ></canvas>
             </div>
             <hr class="visible-xs-block">
             <div class="col-sm-6 col-xs-12">
               <p class="text-center">
-                <strong>Language Overview</strong>
+                <strong>Machine Failures</strong>
               </p>
               <canvas id="languagePie"></canvas>
             </div>
           </div>
         </div>
         <div class="text-center">
-          <small><b>Pro Tip</b> Don't forget to star us on github!</small>
+          <small><b></b> </small>
         </div>
       </div>
     </div>
@@ -92,7 +94,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-green"
                           :icon-classes="['ion', 'ion-ios-heart-outline']"
-                          text="Activity"
+                          text="Mentions"
                           number="92,050"
                           :progress="20"
                           description="20% increase in 30 days"></process-info-box>
@@ -101,7 +103,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-red"
                           :icon-classes="['ion', 'ion-ios-cloud-download-outline']"
-                          text="Transactions"
+                          text="Downloads"
                           number="114,381"
                           :progress="70"
                           description="70% increase since yesterday"></process-info-box>
@@ -110,7 +112,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <process-info-box color-class="bg-aqua"
                           :icon-classes="['ion', 'ion-ios-chatbubble-outline']"
-                          text="Support"
+                          text="Direct Messages"
                           number="163,921"
                           :progress="40"
                           description="40% increase compared to last year"></process-info-box>
@@ -120,6 +122,7 @@
     <!-- /.row -->
   </section>
   <!-- /.content -->
+
 </template>
 
 <script>

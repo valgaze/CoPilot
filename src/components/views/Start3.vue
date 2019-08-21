@@ -50,7 +50,7 @@
   export default {
     methods: {
       restart() {
-        this.$router.push('/start');
+        this.$router.push('/');
       },
       select(item) {
           this.$router.push('/start3');
