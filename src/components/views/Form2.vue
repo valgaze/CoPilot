@@ -1,6 +1,9 @@
 <template>
     <section class="content">
     <div class="row center-block">
+
+    <a href="#" @click="serialize" class="btn btn-primary form-control">Persist</a>
+
       <h1 class="text-center">Form2</h1>
       <h4>Multiple values</h4>
       <div class="form-group">
@@ -14,9 +17,8 @@
 
       <h4>Select Options</h4>
       <div class="form-group">
-          <alert  :dismissible="true"
+          <alert :dismissible="true"
               :iconClasses="[]"
-              :key="idx"
                type="danger"               >
           <span></span>
             <i class="fa fa-mail fa-2x"></i>{{$store.state.selection}}
@@ -56,6 +58,11 @@
 import Alert from '../widgets/Alert'
 
   export default {
+    methods: {
+      serialize() {
+        this.$router.push('/action3');
+      },
+    },
     components: {
       Alert,
     },

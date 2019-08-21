@@ -2,12 +2,18 @@
     <section class="content">
     <div class="row center-block">
       <h1 class="text-center">Form4</h1>
+      <button @click="serialize">Start over</button>
     </div>
   </section>
 </template>
 <script>
   export default {
-    name: 'Tasks',
+    name: 'Form4',
+    methods: {
+      serialize() {
+        this.$router.push('/action1');
+      },
+    },
     data() {
       return {
         label: 'Form4'

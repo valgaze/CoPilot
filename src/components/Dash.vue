@@ -24,7 +24,10 @@
         </ol> -->
       </section>
 
-      <router-view></router-view>
+
+      <transition name="slidefun" mode="out-in">
+        <router-view v-bind:key="$route.params.id"></router-view>
+      </transition>
     </div>
     <!-- /.content-wrapper -->
   
@@ -70,6 +73,21 @@ export default {
 </script>
 
 <style>
+
+.slidefun-enter-active,
+.slidefun-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.slidefun-enter,
+.slidefun-leave-active {
+  opacity: 0
+}
+
+
+
 .wrapper.fixed_layout .main-header {
   position: fixed;
   width: 100%;
